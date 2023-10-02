@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <input type="color" value="#f1f2f3"> -->
+
+    <h1 class="header-title"><span id="col">Col</span><span id="or">or</span> <span id="gene">Gene</span><span id="ra">ra</span><span id="tor">tor</span></h1>
+    <main>
+        <div class="container">
+            <!-- Live UI Kit Demo -->
+            <section class="ui-kit-demo">
+                <h1>Live UI Kit Demo</h1>
+                <h2>Choose your own palette color or click on a random palette and see live preview</h2>
+                <div class="profile-container">
+                    <!-- Profile Header -->
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="./profile-img.png" alt="profile-img">
+                            <div class="profile-name">
+                                <p class="black-text">Jan Kowalski</p>
+                                <p class="gray-text">Frontend Developer</p>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="header-btns">
+                            <div class="view-profile">View profile</div>
+                            <div class="change-status">Change Status</div>
+                        </div>
+                    </div>
+                    <!-- Profile form buttons -->
+                    <div class="save-changes">Save Changes</div>
+                    <div class="login-container">
+                        <div class="full-name">
+                            <label>Full name</label>
+                            <div class="name">
+                                Jan Kowalski
+                            </div>
+                        </div>
+                        <div class="password">
+                            <label>password</label>
+                            <div class="password-input">
+                                ●●●●●●
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Social Media Icons -->
+                    <div class="icons-container">
+                        <ion-icon name="finger-print-outline" id="finger-icon"></ion-icon>
+                        <ion-icon name="mail-outline" id="mail-outline"></ion-icon>
+                        <ion-icon name="location-outline" id="location-outline"></ion-icon>
+                        <ion-icon name="calendar-clear-outline" id="calendar"></ion-icon>
+                        <ion-icon name="chatbubbles-outline" id="chat"></ion-icon>
+                    </div>
+                    <!-- Toggle Switch -->
+                    <div class="toggle-switch">
+                        <div class="notification">
+                            <p class="black-text">Push Notification</p>
+                            <div class="toggle-btn-true"></div>
+                        </div>
+                        <div class="data-history">
+                            <p class="gray-text">Commits data and history</p>
+                            <div class="toggle-btn-false"></div>
+                        </div>
+                    </div>
+                    <!-- Footer -->
+                    <div class="footer">
+                        <p class="gray-text">Already have an account? <span id="sign-in">Sign In</span></p>
+                    </div>
+                </div>
+            </section>
+            <!-- Choose your colors -->
+            <section class="choose-colors">
+                <div>
+                    <h1>Choose your colors</h1>
+                    <h2>Click the blocks to set colors</h2>
+                </div>
+                <div class="palette-color">
+                    <input type="color" value="#f1f2f3" id="view-finger-sign">
+                    <input type="color" value="#f1f2f3" id="status-location">
+                    <input type="color" value="#f1f2f3" id="save-toggle-mail">
+                    <input type="color" value="#f1f2f3" id="name-password-calendar">
+                    <input type="color" value="#f1f2f3" id="dot-chat" oninput="dotChatChange()">
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
